@@ -1,10 +1,11 @@
 const loadDinos = require('./dinosaurs');
+const printToDom = require('./dom');
 
 let dinoArray = [];  // must be a let cuz reassign on line 6
 
 const whenDinosLoad = function () {
   dinoArray = JSON.parse(this.responseText).dinosaurs;
-  console.log('dinoArray', dinoArray);
+  printToDom(dinoArray);
 };
 
 const badDinos = function () {
