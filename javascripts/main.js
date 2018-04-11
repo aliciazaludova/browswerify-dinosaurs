@@ -1,1 +1,3 @@
-console.log('orange');
+const data = require('./data');
+
+data.initializer();
